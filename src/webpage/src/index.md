@@ -43,14 +43,14 @@ features:
 import { withBase } from "vitepress";
 
 const databases = [
-    { label: "ClickHouse", src: "assets/clickhouse.svg" },
-    { label: "Microsoft SQL Server", src: "assets/mssql.svg" },
-    { label: "MySQL", src: "assets/mysql.svg" },
-    { label: "Oracle", src: "assets/oracle.png" },
-    { label: "PostgreSQL", src: "assets/postgresql.svg" },
-    { label: "Redshift", src: "assets/redshift.svg" },
-    { label: "Snowflake", src: "assets/snowflake.svg" },
-    { label: "SQLite", src: "assets/sqlite.svg" },
+    { label: "ClickHouse", src: "/dbms-icons/clickhouse.svg" },
+    { label: "Microsoft SQL Server", src: "/dbms-icons/mssql.svg" },
+    { label: "MySQL", src: "/dbms-icons/mysql.svg" },
+    { label: "Oracle", src: "/dbms-icons/oracle.png" },
+    { label: "PostgreSQL", src: "/dbms-icons/postgresql.svg" },
+    { label: "Redshift", src: "/dbms-icons/redshift.svg" },
+    { label: "Snowflake", src: "/dbms-icons/snowflake.svg" },
+    { label: "SQLite", src: "/dbms-icons/sqlite.svg" },
 ]
 </script>
 
