@@ -40,15 +40,17 @@ features:
 <hr />
 
 <script setup>
+import { withBase } from "vitepress";
+
 const databases = [
-    { label: "ClickHouse", src: "./assets/clickhouse.svg" },
-    { label: "Microsoft SQL Server", src: "./assets/mssql.svg" },
-    { label: "MySQL", src: "./assets/mysql.svg" },
-    { label: "Oracle", src: "./assets/oracle.png" },
-    { label: "PostgreSQL", src: "./assets/postgresql.svg" },
-    { label: "Redshift", src: "./assets/redshift.svg" },
-    { label: "Snowflake", src: "./assets/snowflake.svg" },
-    { label: "SQLite", src: "./assets/sqlite.svg" },
+    { label: "ClickHouse", src: "assets/clickhouse.svg" },
+    { label: "Microsoft SQL Server", src: "assets/mssql.svg" },
+    { label: "MySQL", src: "assets/mysql.svg" },
+    { label: "Oracle", src: "assets/oracle.png" },
+    { label: "PostgreSQL", src: "assets/postgresql.svg" },
+    { label: "Redshift", src: "assets/redshift.svg" },
+    { label: "Snowflake", src: "assets/snowflake.svg" },
+    { label: "SQLite", src: "assets/sqlite.svg" },
 ]
 </script>
 
@@ -56,7 +58,7 @@ const databases = [
 
 <div style="display: flex; justify-content: space-around; padding: 2rem 0">
     <div v-for="db in databases">
-        <img style="height: 100px; margin: 0 auto" :alt="db.label" :src="db.src" />
+        <img style="height: 100px; margin: 0 auto" :alt="db.label" :src="withBase(db.src)" />
         <p style="text-align: center">{{ db.label }}</p>
     </div>
 </div>
