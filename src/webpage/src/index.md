@@ -3,8 +3,11 @@ layout: home
 
 hero:
   name: "DynAPI"
-  text: "Dynamic API for many Databases"
+  text: "a <span style=\"color: #6196ff;\">Dyn</span>amic <span style=\"color: #6196ff\">API</span><br>for many Databases"
   tagline: V2 is currently under development
+  image:
+    src: /dynapi.svg
+    alt: DynAPI
   actions:
 #    - theme: brand
 #      text: Quickstart
@@ -13,8 +16,11 @@ hero:
 #      text: Documentation
 #      link: /docs
     - theme: alt
-      text: DynAPI (v1)
+      text: DynAPI (V1)
       link: https://github.com/DynAPI/DynAPI
+    - theme: alt
+      text: See on GitHub
+      link: https://github.com/DynAPI/org.dynapi.dynapi
 
 features:
   - title: Fast
@@ -31,16 +37,10 @@ features:
     details: In case you don't want to reveal your whole database it is possible to configure which parts are available.
 ---
 
-<hr />
-
-> [!IMPORTANT]
-> The DynAPI Team is currently working on the better and faster Version 2 of DynAPI.
-> You may be searching for the [Version 1](https://github.com/DynAPI/DynAPI)
-
-<hr />
-
 <script setup>
 import { withBase } from "vitepress";
+import { VPTeamMembers } from 'vitepress/theme';
+
 
 const databases = [
     { label: "ClickHouse", src: "/dbms-icons/clickhouse.svg" },
@@ -51,16 +51,62 @@ const databases = [
     { label: "Redshift", src: "/dbms-icons/redshift.svg" },
     { label: "Snowflake", src: "/dbms-icons/snowflake.svg" },
     { label: "SQLite", src: "/dbms-icons/sqlite.svg" },
-]
+];
+const members = [
+  {
+    avatar: 'https://www.github.com/PlayerG9.png',
+    name: 'PlayerG9',
+    title: 'Creator',
+    links: [
+      { icon: 'github', link: 'https://github.com/PlayerG9' },
+    ]
+  },
+];
 </script>
 
-<h1 style="text-align: center">DynAPI supports multiple DBMS</h1>
+---
 
-<div style="display: flex; justify-content: space-around; padding: 2rem 0">
+> [!IMPORTANT]
+> The DynAPI Team is currently working on the better and faster Version 2 of DynAPI.
+> You may be searching for the [Version 1](https://github.com/DynAPI/DynAPI).
+> 
+> DynAPI (V1) is written in Python and supports only PostgreSQL Databases.
+
+---
+
+<h1 style="text-align: center">DynAPI supports (soon) multiple DBMS</h1>
+
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; padding: 2rem 0">
     <div v-for="db in databases">
-        <img style="height: 100px; margin: 0 auto" :alt="db.label" :src="withBase(db.src)" />
+        <img style="height: 100px; margin: 0 auto; filter: grayscale(1);" :alt="db.label" :src="withBase(db.src)" />
         <p style="text-align: center">{{ db.label }}</p>
     </div>
 </div>
 
 [//]: # (- Vertica)
+
+<!--
+
+---
+
+<h1 style="text-align: center;">Performance</h1>
+
+---
+
+<h1 style="text-align: center;">Security</h1>
+
+---
+
+<h1 style="text-align: center;">Realtime Updates</h1>
+
+---
+
+<h1 style="text-align: center;">Full Control</h1>
+
+-->
+
+---
+
+<h1 style="text-align: center;">The DynAPI Team</h1>
+
+<VPTeamMembers size="small" :members="members" />
