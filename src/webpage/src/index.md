@@ -110,3 +110,35 @@ const members = [
 <h1 style="text-align: center;">The DynAPI Team</h1>
 
 <VPTeamMembers size="small" :members="members" />
+
+---
+
+<h1 style="text-align: center;">Other DynAPI Software/Packages</h1>
+
+### [The Interceptor](https://github.com/dynapi/interceptor)
+
+> Middleman between the clients and your backend to add security or other verifications to the requests.
+
+The Interceptor is a simple extendable HTTP Proxy-Server to add logging or authentication to an existing backend.
+You can add `interceptors` which can reject incoming requests or modify them before sending them to the actual backend.
+
+### [org.dynapi:squirtle](https://github.com/dynapi/org.dynapi.squirtle)
+
+> Java SQL Query Builder
+
+Squirtle is a dynamic SQL-Query-Builder that supports multiple DBMS-Dialects.
+It can be used to generate simple or complex SQL queries.
+
+### [org.dynapi:openapispec](https://github.com/dynapi/org.dynapi.openapispec)
+
+> OpenAPI Specification Builder Library
+
+OpenApiSpec can be used to generate [OpenApi-Specification](https://swagger.io/specification/).
+This specification can then be used in combination with [Swagger-UI](https://swagger.io/tools/swagger-ui/) or [ReDoc](https://redocly.com/) to add a beautiful documentation to your Restful API.
+
+### [org.dynapi:json-schema-gen](https://github.com/dynapi/org.dynapi.jsonschemagen)
+
+> Simple json-schema Generation Library
+
+Json-Schema-Gen is a library to generate a [JSON-Schema](https://json-schema.org/) for your configuration file in order for IDE to provide better autocompletion.
+This library supports the generation by using annotation on your configuration-class or by directly using the Java-API.
