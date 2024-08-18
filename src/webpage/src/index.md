@@ -10,11 +10,11 @@ hero:
     alt: DynAPI
   actions:
 #    - theme: brand
-#      text: Quickstart
-#      link: /quickstart
+#      text: Guide
+#      link: /guide/what-is-dynapi
 #    - theme: alt
-#      text: Documentation
-#      link: /docs
+#      text: References
+#      link: /references
     - theme: alt
       text: DynAPI (V1)
       link: https://github.com/DynAPI/DynAPI
@@ -40,28 +40,8 @@ features:
 <script setup>
 import { withBase } from "vitepress";
 import { VPTeamMembers } from 'vitepress/theme';
-
-
-const databases = [
-    { label: "ClickHouse", src: "/dbms-icons/clickhouse.svg" },
-    { label: "Microsoft SQL Server", src: "/dbms-icons/mssql.svg" },
-    { label: "MySQL", src: "/dbms-icons/mysql.svg" },
-    { label: "Oracle", src: "/dbms-icons/oracle.png" },
-    { label: "PostgreSQL", src: "/dbms-icons/postgresql.svg" },
-    { label: "Redshift", src: "/dbms-icons/redshift.svg" },
-    { label: "Snowflake", src: "/dbms-icons/snowflake.svg" },
-    { label: "SQLite", src: "/dbms-icons/sqlite.svg" },
-];
-const members = [
-  {
-    avatar: 'https://www.github.com/PlayerG9.png',
-    name: 'PlayerG9',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/PlayerG9' },
-    ]
-  },
-];
+import { data as databases } from "/data/databases.data.ts";
+import { data as members } from "/data/members.data.ts";
 </script>
 
 ---
