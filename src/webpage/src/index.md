@@ -44,6 +44,31 @@ import { data as databases } from "/data/databases.data.ts";
 import { data as members } from "/data/members.data.ts";
 </script>
 
+<style scoped>
+#dbms-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+#dbms-links > a {
+    text-decoration: none;
+    color: var(--vp-c-text-1);
+}
+#dbms-links > a:hover {
+    text-decoration: underline;
+}
+#dbms-links > a > img {
+    height: 100px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+#dbms-links > a:hover > img {
+    filter: grayscale(0%);
+}
+</style>
+
 ---
 
 > [!IMPORTANT]
@@ -56,11 +81,11 @@ import { data as members } from "/data/members.data.ts";
 
 <h1 style="text-align: center">DynAPI supports (soon) multiple DBMS</h1>
 
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap; padding: 2rem 0">
-    <div v-for="db in databases">
-        <img style="height: 100px; margin: 0 auto; filter: grayscale(1);" :alt="db.label" :src="withBase(db.src)" />
+<div id="dbms-links" style="">
+    <a v-for="db in databases" :href="db.href">
+        <img :alt="db.label" :src="withBase(db.src)" />
         <p style="text-align: center">{{ db.label }}</p>
-    </div>
+    </a>
 </div>
 
 [//]: # (- Vertica)
