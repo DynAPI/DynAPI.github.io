@@ -2,6 +2,21 @@
 import { data as databases } from "/data/databases.data.ts";
 </script>
 
+<style scoped>
+#dbms-list a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+#dbms-list a:hover {
+  text-decoration: underline;
+}
+#dbms-list a > img {
+  display: inline-block;
+  height: 1em;
+  margin-right: 0.5em;
+}
+</style>
+
 # What is DynAPI?
 
 DynAPI is a **Dyn**amic **API** for many databases. \
@@ -38,9 +53,13 @@ While DynAPI (v1) could only work with PostgreSQL databases, the new DynAPI supp
 
 ## Supported Databases
 
-<ul>
+<ul id="dbms-list">
     <li v-for="database in databases">
-        <img style="display: inline-block; height: 1em; margin-right: 0.5em;" :src="database.src" :alt="database.label" />
-        <span>{{ database.label }}</span>
+        <a :href="database.href">
+            <img :src="database.src" :alt="database.label" />
+            <span>{{ database.label }}</span>
+        </a>
     </li>
 </ul>
+
+<small>*DynAPI is extendable to support other DBMS.</small>
