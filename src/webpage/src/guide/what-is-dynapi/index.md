@@ -19,16 +19,16 @@ import { data as databases } from "/data/databases.data.ts";
 
 # What is DynAPI?
 
-DynAPI is a **Dyn**amic **API** for many databases. \
+DynAPI is an out-of-the-box **Dyn**amic **API** for many databases. By offering REST and (planned) GraphQL \
 It has
 - an easy setup
 - fast response times
-- good automatic documentation (with [Redoc](https://redocly.com/redoc) and [Swagger](https://swagger.io/tools/swagger-ui/)).
+- good automatic documentation (with [Redoc](https://redocly.com/redoc) and [Swagger](https://swagger.io/tools/swagger-ui/))
+
 
 <div class="tip custom-block" style="padding-top: 8px">
 
 Just want to try it out? Skip to the [Quickstart](../quickstart/index.md).
-
 </div>
 
 ## Use Cases
@@ -41,6 +41,10 @@ Just want to try it out? Skip to the [Quickstart](../quickstart/index.md).
 - **Production**
 
     While DynAPI can be used as a development backend. It is fully capable to run in production and handle thousands of requests simultaneously.
+
+- **Export Tool**
+
+    DynAPI can also be used for scripts or other automated services to get (read-)access to the saved data.
 
 ## What About DynAPI?
 

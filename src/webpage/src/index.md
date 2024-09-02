@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "DynAPI"
-  text: "a <span style=\"color: #6196ff;\">Dyn</span>amic <span style=\"color: #6196ff\">API</span><br>for many Databases"
-  tagline: V2 is currently under development
+  text: "an out-of-the-box <span style=\"color: #6196ff;\">Dyn</span>amic <span style=\"color: #6196ff\">API</span><br>for many Databases"
+  tagline: currently under development
   image:
     src: /dynapi.svg
     alt: DynAPI
