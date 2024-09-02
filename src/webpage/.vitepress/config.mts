@@ -20,9 +20,8 @@ export default defineConfig({
       ['meta', { property: 'og:locale', content: 'en' }],
       ['meta', { property: 'og:title', content: 'DynAPI | an out-of-the-box Dynamic API for many databases' }],
       ['meta', { property: 'og:site_name', content: 'DynAPI' }],
-      ['meta', { property: 'og:image', content: 'https://dynapi.github.io/dynapi.png' }],
-      ['meta', { property: 'og:image:alt', content: 'image/png' }],
-      ['meta', { property: 'og:image:alt', content: 'The DynAPI Logo' }],
+      ['meta', { property: 'og:image', content: 'https://dynapi.github.io/og-image.png' }],
+      ['meta', { property: 'og:image:type', content: 'image/png' }],
       ['meta', { property: 'og:url', content: 'https://dynapi.github.io/' }],
   ],
   themeConfig: {
