@@ -21,7 +21,7 @@ export default <DefaultTheme.NavItem[]>[
             },
             {
                 text: "DynAPI (v1)",
-                link: 'https://github.com/DynAPI/DynAPI',
+                link: 'https://github.com/DynAPI/DynAPI-v1',
                 target: '_blank',
             },
             {
@@ -46,7 +46,7 @@ export default <DefaultTheme.NavItem[]>[
             },
             {
                 text: "org.dynapi:json-schema-gen",
-                link: 'https://github.com/DynAPI/org.dynapi.jsonschemagen',
+                link: 'https://github.com/DynAPI/org.dynapi.json-schema-gen',
                 target: '_blank',
             },
         ]

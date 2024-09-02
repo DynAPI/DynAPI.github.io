@@ -15,9 +15,20 @@ export default defineConfig({
   head: [
       // favicon
       ['link', { rel: 'icon', type: 'image/svg+xml', href: '/dynapi.svg' }],
+      ['meta', { name: 'theme-color', content: '#6196ff' }],
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:locale', content: 'en' }],
+      ['meta', { property: 'og:title', content: 'DynAPI | an out-of-the-box Dynamic API for many Databases' }],
+      ['meta', { property: 'og:site_name', content: 'DynAPI' }],
+      ['meta', { property: 'og:image', content: 'https://dynapi.github.io/dynapi.svg' }],
+      ['meta', { property: 'og:url', content: 'https://dynapi.github.io/' }],
   ],
   themeConfig: {
-    logo: '/dynapi.svg',
+    logo: {
+      src: '/dynapi.svg',
+      width: 24,
+      height: 24,
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/DynAPI/org.dynapi.dynapi' },
     ],
