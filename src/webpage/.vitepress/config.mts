@@ -18,9 +18,11 @@ export default defineConfig({
       ['meta', { name: 'theme-color', content: '#6196ff' }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:locale', content: 'en' }],
-      ['meta', { property: 'og:title', content: 'DynAPI | an out-of-the-box Dynamic API for many Databases' }],
+      ['meta', { property: 'og:title', content: 'DynAPI | an out-of-the-box Dynamic API for many databases' }],
       ['meta', { property: 'og:site_name', content: 'DynAPI' }],
-      ['meta', { property: 'og:image', content: 'https://dynapi.github.io/dynapi.svg' }],
+      ['meta', { property: 'og:image', content: 'https://dynapi.github.io/dynapi.png' }],
+      ['meta', { property: 'og:image:alt', content: 'image/png' }],
+      ['meta', { property: 'og:image:alt', content: 'The DynAPI Logo' }],
       ['meta', { property: 'og:url', content: 'https://dynapi.github.io/' }],
   ],
   themeConfig: {
