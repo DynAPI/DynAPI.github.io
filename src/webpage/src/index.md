@@ -52,6 +52,10 @@ import { data as members } from "/data/members.data.ts";
   --vp-home-hero-image-filter: blur(100px);
 }
 
+.vp-doc h1 {
+    text-align: center;
+}
+
 #dbms-links {
     display: flex;
     justify-content: space-around;
@@ -86,7 +90,7 @@ import { data as members } from "/data/members.data.ts";
 
 ---
 
-<h1 style="text-align: center">DynAPI supports (soon) multiple DBMS</h1>
+# DynAPI supports (soon) multiple DBMS
 
 <div id="dbms-links" style="">
     <a v-for="db in databases" :href="db.href">
@@ -101,31 +105,31 @@ import { data as members } from "/data/members.data.ts";
 
 ---
 
-<h1 style="text-align: center;">Performance</h1>
+# Performance
 
 ---
 
-<h1 style="text-align: center;">Security</h1>
+# Security
 
 ---
 
-<h1 style="text-align: center;">Realtime Updates</h1>
+# Realtime Updates
 
 ---
 
-<h1 style="text-align: center;">Full Control</h1>
+# Full Control
 
 -->
 
 ---
 
-<h1 style="text-align: center;">The DynAPI Team</h1>
+# The DynAPI Team
 
 <VPTeamMembers size="small" :members="members" />
 
 ---
 
-<h1 style="text-align: center;">Other DynAPI Software/Packages</h1>
+# Other DynAPI Software/Packages
 
 ### [The Interceptor](https://github.com/dynapi/interceptor)
 
