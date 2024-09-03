@@ -41,8 +41,8 @@ features:
 <script setup>
 import { withBase } from "vitepress";
 import { VPTeamMembers } from 'vitepress/theme';
-import { data as databases } from "/data/databases.data.ts";
-import { data as members } from "/data/members.data.ts";
+import { data as databases } from "/home/playerg9/git/playerg9/orgs/DynAPI/DynAPI.github.io/src/webpage/data/databases.data.ts";
+import { data as members } from "/home/playerg9/git/playerg9/orgs/DynAPI/DynAPI.github.io/src/webpage/data/members.data.ts";
 </script>
 
 <style>
