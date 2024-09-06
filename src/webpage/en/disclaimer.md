@@ -1,3 +1,7 @@
+---
+lastUpdated: false
+---
+
 # Disclaimer
 
 This software product is provided by DynAPI "as is" and "with all faults."

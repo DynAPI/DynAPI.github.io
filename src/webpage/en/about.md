@@ -1,3 +1,7 @@
+---
+lastUpdated: false
+---
+
 # About Us
 
 DynAPI is an organization on GitHub.
