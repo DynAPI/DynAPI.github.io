@@ -37,7 +37,13 @@ export const shared = defineConfig({
             provider: 'local',
         },
         footer: {
-            copyright: "Copyright © 2024-present DynAPI",
+            message: `<div>
+                <p>
+                    <a href="/about">About Us</a> •
+                    <a href="/disclaimer">Disclaimer</a>
+                </p>
+            </div>`,
+            copyright: `Copyright © 2024-present <a href='https://dynapi.github.io/'>DynAPI</a>`,
         }
     },
 
