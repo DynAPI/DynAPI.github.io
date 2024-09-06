@@ -8,8 +8,8 @@ export const en = defineConfig({
     themeConfig: {
         nav: nav(),
         sidebar: {
-            '/guide/': { base: '/guide/', items: sidebarGuide() },
-            '/references/': { base: '/references/', items: sidebarReferences() },
+            '/guide/': { items: sidebarGuide() },
+            '/references/': { items: sidebarReferences() },
         },
     }
 })
