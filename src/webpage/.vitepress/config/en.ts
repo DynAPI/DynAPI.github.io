@@ -65,6 +65,11 @@ function nav(): DefaultTheme.NavItem[] {
                     link: 'https://github.com/DynAPI/org.dynapi.json-schema-gen',
                     target: '_blank',
                 },
+                {
+                    text: "org.dynapi:common",
+                    link: 'https://github.com/DynAPI/org.dynapi.common',
+                    target: '_blank',
+                },
             ]
         },
     ]

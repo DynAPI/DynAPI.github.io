@@ -166,3 +166,9 @@ This specification can then be used in combination with [Swagger-UI](https://swa
 
 Json-Schema-Gen is a library to generate a [JSON-Schema](https://json-schema.org/) for your configuration file in order for IDE to provide better autocompletion.
 This library supports the generation by using annotation on your configuration-class or by directly using the Java-API.
+
+### [org.dynapi:common](https://github.com/dynapi/org.dynapi.common)
+
+> common classes and utility functions
+
+org.dynapi:common is library that contains useful classes and utility functions for building, formatting and debugging.
