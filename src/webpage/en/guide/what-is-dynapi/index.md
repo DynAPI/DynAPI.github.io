@@ -33,18 +33,30 @@ Just want to try it out? Skip to the [Quickstart](../quickstart/index.md).
 
 ## Use Cases
 
+- **Temporary Backend**
+
+   DynAPI's easy-to-setup system can be used perfectly to get a backend for smaller or short-living projects.
+
 - **Development**
 
     DynAPI can be used to provide a fully documented Rest-API for your Database.
-    This way your frontend can start working while the backend is still under (early) development.
+    This way your frontend-devs can start working while the actual backend is still in the planning or (early) development stage.
 
 - **Production**
 
-    While DynAPI can be used as a development backend. It is fully capable to run in production and handle thousands of requests simultaneously.
+    While DynAPI can be used as a temporary- or development- backend. It is fully capable to run in production and handle hundreds (if not thousands) of requests simultaneously.
 
 - **Export Tool**
 
     DynAPI can also be used for scripts or other automated services to get (read-)access to the saved data.
+    For such a job it would be too much work to create your own customized backend.
+
+This erases your work of selecting a programming-language and libraries, writing and adjusting Endpoints, and creating a deployment process.
+Additionally, it's likely that your backend wouldn't be fully documented or has a secure authentication system. 
+
+In case you need some special (customized) Endpoints you can create a simple plugin that extends the DynAPI Server.
+
+Planned for a later stage is also the support for GraphQL.
 
 ## What About DynAPI?
 
