@@ -35,7 +35,8 @@ Just want to try it out? Skip to the [Quickstart](../quickstart/index.md).
 
 - **Temporary Backend**
 
-   DynAPI's easy-to-setup system can be used perfectly to get a backend for smaller or short-living projects.
+    DynAPI's easy-to-setup system can be used perfectly to get a backend for smaller or short-living projects.
+    This is particularly helpful when time or budget is limited.
 
 - **Development**
 
@@ -44,7 +45,8 @@ Just want to try it out? Skip to the [Quickstart](../quickstart/index.md).
 
 - **Production**
 
-    While DynAPI can be used as a temporary- or development- backend. It is fully capable to run in production and handle hundreds (if not thousands) of requests simultaneously.
+    While DynAPI could be used as only a temporary- or development- backend.
+    It is fully capable to run in production and handle hundreds (if not thousands) of requests simultaneously.
 
 - **Export Tool**
 
@@ -68,6 +70,11 @@ While DynAPI (v1) could only work with PostgreSQL databases, the new DynAPI supp
 (see [supported database](#supported-databases))
 
 ## Supported Databases
+
+<small>
+As DynAPI is currently under development most databases can't be used yet.
+The focus will be SQLite and PostgreSQL while the support for other databases is gradually added. 
+</small>
 
 <ul id="dbms-list">
     <li v-for="database in databases">
